@@ -2,24 +2,31 @@
 <html>
 <head>
 	<title>Alexa's Random Cute Word Generator!</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript"> 
+		function generate_word(){
+		var word_list = ['adorable', 'angel', 'baby', 'bloop', 'brumby', 'bubbles', 'bug', 'bumberell', 'bumble', 'bungle', 'burple', 'buttercup', 'butterfly', 'butterscotch', 'buttons', 'canoodle', 'charming', 'chiffchaff', 'chomp', 'cuddly', 'cupcake', 'cute', 'cutie', 'pie', 'cutsie', 'delightful', 'dimples', 'dobby', 'doink', 'doll', 'dovey', 'fairy', 'flarf', 'fluffy', 'foozle', 'forever', 'froglet', 'frumpous', 'fun', 'funny', 'gem', 'giggles', 'glittery', 'glume', 'heart', 'hugsy', 'hunnybunch', 'jewel', 'jiggly', 'joy', 'kinky', 'kisses', 'kissy', 'kithly', 'kitty', 'ladybug', 'love', 'lovey', 'munchkin', 'paddywack', 'pebbles', 'piggy', 'pipsqueek', 'plonk', 'pooch', 'poplin', 'precious', 'pretty', 'prince', 'princess', 'prinky', 'pumpkin', 'rainbow', 'rhubarb', 'schnoogle', 'slurp', 'smoochies', 'smush', 'snaffle', 'snifty', 'snuggle', 'snuggly', 'snurf', 'snurfle', 'spooky', 'sprinkles', 'squeeze', 'sugar', 'sugary', 'sunshine', 'sweet', 'sweetie', 'sweety', 'thimble', 'toot', 'tootsie', 'treasure', 'whiffle', 'whiskers', 'wiggly', 'wispy', 'wobbly'];
+		
+			
+		var x = Math.floor(Math.random() * word_list.length);
+
+
+		document.getElementById("randomword").style.fontFamily = "Arial Rounded MT Bold"; 
+
+
+		document.getElementById("randomword").innerHTML = word_list[x];
+	}
+	</script>
 </head>
 <body>
+
 	This is a random cute word generator, made for Alexa!
+
 	<p>
-		Random Word: 
+	<button id="button" onclick="generate_word()"> Random Word: </button>
 	</p>
-	<p id="demo"></p>
-	<script type="text/javascript"> 
-
-	var word_list = ['adorable', 'angel', 'baby', 'bloop', 'brumby', 'bubbles', 'bug', 'bumberell', 'bumble', 'bungle', 'burple', 'buttercup', 'butterfly', 'butterscotch', 'buttons', 'canoodle', 'charming', 'chiffchaff', 'chomp', 'cuddly', 'cupcake', 'cute', 'cutie', 'pie', 'cutsie', 'delightful', 'dimples', 'dobby', 'doink', 'doll', 'dovey', 'fairy', 'flarf', 'fluffy', 'foozle', 'forever', 'froglet', 'frumpous', 'fun', 'funny', 'gem', 'giggles', 'glittery', 'glume', 'heart', 'hugsy', 'hunnybunch', 'jewel', 'jiggly', 'joy', 'kinky', 'kisses', 'kissy', 'kithly', 'kitty', 'ladybug', 'love', 'lovey', 'munchkin', 'paddywack', 'pebbles', 'piggy', 'pipsqueek', 'plonk', 'pooch', 'poplin', 'precious', 'pretty', 'prince', 'princess', 'prinky', 'pumpkin', 'rainbow', 'rhubarb', 'schnoogle', 'slurp', 'smoochies', 'smush', 'snaffle', 'snifty', 'snuggle', 'snuggly', 'snurf', 'snurfle', 'spooky', 'sprinkles', 'squeeze', 'sugar', 'sugary', 'sunshine', 'sweet', 'sweetie', 'sweety', 'thimble', 'toot', 'tootsie', 'treasure', 'whiffle', 'whiskers', 'wiggly', 'wispy', 'wobbly'];
 	
-		
-	var x = Math.floor(Math.random() * word_list.length);
+	<p id="randomword"></p>
 
-
-	document.getElementById("demo").innerHTML = word_list[x];
-
-
-	</script>
 </body>
 </html>
