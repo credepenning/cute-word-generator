@@ -1,0 +1,24 @@
+body {
+
+
+	text-align: center;
+	font-family: Arial;
+	background-color: #dad2bc;
+
+}
+
+#randomword{
+
+	font-size: 40px;
+	padding-top: -20px;
+}
+
+#button{
+
+	background-color: #70798c; 
+	font-size: 20px;
+	text-align: center;
+	padding: 30px;
+	color: #f5f1ed;
+
+}
